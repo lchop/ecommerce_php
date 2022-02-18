@@ -1,8 +1,0 @@
-<div>
-    <h2><?= $product[0]->getName() ?></h2>
-    <h2><?= $product[0]->getDescription() ?></h2>
-    <h2>Stock: <?= $product[0]->getStock() ?></h2>
-    <p>Price: <?= $product[0]->getPrice() ?></p>
-    <img width=100 height=120 src="public/images/<?=$product[0]->getImg()?>" ></img>
-    <button><a href="index.php?page=product&action=addbasket&id=<?= $product[0]->getId() ?>">Ajouter au panier</a></button>
-</div>
