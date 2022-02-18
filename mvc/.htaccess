@@ -1,0 +1,9 @@
+Options +FollowSymlinks
+RewriteEngine on
+
+RewriteRule ^$  index.php [L]
+RewriteRule ^contact  index.php?page=contact [L]
+RewriteRule ^products  index.php?page=products [L]
+RewriteRule ^product-([0-9]+)  index.php?page=product&&id=$1 [L]
+RewriteRule ^account  index.php?page=account [L]
+RewriteRule ^basket  index.php?page=basket [L]

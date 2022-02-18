@@ -1,0 +1,18 @@
+<h1><?= $count ?> produit(s) dans le panier</h1>
+
+<?php foreach($products as $product): ?>
+    <ul>
+        <li>
+            <div>
+               <h2><?= $product[0]->getName() ?></h2>
+                <h2><?= $product[0]->getDescription() ?></h2>
+                <h2>Stock: <?= $product[0]->getStock() ?></h2>
+                <p>Price: <?= $product[0]->getPrice() ?></p>
+                <img width=100 height=120 src="public/images/<?=$product[0]->getImg()?>" ></img>
+            </div>
+            <button><a href="index.php?page=product&id=<?= $product[0]->getId() ?>">Details</a></button>
+        </li>
+    </ul>
+<?php endforeach; ?>
+<p></p>
+<button>Passer commande...</button>
